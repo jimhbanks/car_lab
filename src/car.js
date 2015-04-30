@@ -4,12 +4,13 @@ function Car(make, model, year, color, state, previousOwners, currentOwner, pass
     this.previousOwners = previousOwners;
     this.currentOwner = currentOwner;
     this.passengers = passengers;
-
 }
 
 
 Car.prototype.sale = function(newOwner){
-  return   myCar.previousOwners.push(myCar.currentOwner);
+        this.previousOwners.push(this.currentOwner);
+        this.currentOwner = newOwner;
+
 
 };
 
