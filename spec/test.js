@@ -8,7 +8,7 @@ describe('Car', function(){
 
   beforeEach(function(){
     // create a new myCar object each time
-    myCar = new Car("Dodge","Charger", 2015, "Red");
+    myCar = new Car("Dodge","Charger", 2015, "Red", "off", "");
   });
 
   describe('#year', function(){
@@ -18,13 +18,13 @@ describe('Car', function(){
   });
 
   describe('#state', function(){
-    xit('should initially be off', function(){
+    it('should initially be off', function(){
       expect(myCar.state).to.equal("off");
     });
   });
 
   describe('#previousOwners', function(){
-    xit('should exist and initially be empty', function(){
+    it('should exist and initially be empty', function(){
       expect(myCar.previousOwners).to.exist.to.be.empty;
     });
   });
