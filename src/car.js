@@ -9,6 +9,7 @@ function Car(make, model, year, color, state, previousOwners, currentOwner, pass
 
 
 Car.prototype.sale = function(newOwner){
+  return   myCar.previousOwners.push(myCar.currentOwner);
 
 };
 
